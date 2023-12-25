@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Gloria&#39;s Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Nor shall Death brag thou wanderst in his shade, When in eternal lines to time thou growest: So long as men can breathe or eyes can see, So long lives this and this gives life to thee.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gloria&#39;s Personal Website">
+<meta property="og:url" content="https://shuizhimei.github.io/index.html">
+<meta property="og:site_name" content="Gloria&#39;s Personal Website">
+<meta property="og:description" content="Nor shall Death brag thou wanderst in his shade, When in eternal lines to time thou growest: So long as men can breathe or eyes can see, So long lives this and this gives life to thee.">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Gong Qinnruoxuan">
+<meta property="article:tag" content="Blog, Personal Website">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Gloria's Personal Website" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Gloria&#39;s Personal Website</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Fly free</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Shuizhimei.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Apply-LLMs-in-specific-domains" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/22/Apply-LLMs-in-specific-domains/" class="article-date">
+  <time class="dt-published" datetime="2023-12-22T14:28:56.000Z" itemprop="datePublished">2023-12-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/12/22/Apply-LLMs-in-specific-domains/">Apply LLMs in specific domains</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Domain-specific-LLM"><a href="#Domain-specific-LLM" class="headerlink" title="Domain-specific LLM"></a>Domain-specific LLM</h1><h2 id="Some-Explanations"><a href="#Some-Explanations" class="headerlink" title="Some Explanations"></a>Some Explanations</h2><p>Domain-specific LLM is a general model trained or fine-tuned to perform well-defined tasks dictated by organizational guidelines. The term “domain” in this context refers to a specific area of knowledge or expertise, such as medicine, finance, law, technology, or any other specialized field.</p>
+<h2 id="Reasons-for-building-domain-specific-LLMs"><a href="#Reasons-for-building-domain-specific-LLMs" class="headerlink" title="Reasons for building domain-specific LLMs"></a>Reasons for building domain-specific LLMs</h2><p>Large Language Model (LLM) has gained popularity and achieved remarkable results in open-domain tasks, but its performance in real industrial domain-specific scenarios is average due to its lack of specific domain knowledge. The phenomenon of hallucination often occurs when general large language models solve domain-specific problem, which greatly limits their performance. Besides, LLMs are difficult to apply common sense to distinguish right from wrong like humans do. The overall purpose of building domain-specific LLMs is to make the model more adept at understanding and generating text relevant to that particular domain. </p>
+<h2 id="Some-Models"><a href="#Some-Models" class="headerlink" title="Some Models"></a>Some Models</h2><ul>
+<li>Medicine : Med-PaLM, ChatDoctor, …</li>
+<li>Law : ChatLaw, LaWGPT, …</li>
+<li>Finance : BloombergGPT, FinGPT, …</li>
+</ul>
+<h1 id="Build-Domain-specific-LLM"><a href="#Build-Domain-specific-LLM" class="headerlink" title="Build Domain-specific LLM"></a>Build Domain-specific LLM</h1><img src="/2023/12/22/Apply-LLMs-in-specific-domains/domain_specialization.png" class="" title="Domain Specialization Techniques">
+
+<h2 id="External-Augmentation"><a href="#External-Augmentation" class="headerlink" title="External Augmentation"></a>External Augmentation</h2><h4 id="Domain-Knowledge-Augmentation"><a href="#Domain-Knowledge-Augmentation" class="headerlink" title="Domain Knowledge Augmentation"></a>Domain Knowledge Augmentation</h4><p>Augmenting language models with relevant information retrieved from various knowledge stores has shown to be effective in improving performance. Using the input as query, a retriever first retrieves a set of documents (i.e.,sequences of tokens) from a corpus and then a language model incorporates the retrieved documents as additional information to make a final prediction. This integrated approach utilizes a retrieval-based method to teach the model domain-specific language knowledge, making it capable of understanding and responding to user queries within a specific industry or field.</p>
+<h4 id="Domain-Tool-Augmentation"><a href="#Domain-Tool-Augmentation" class="headerlink" title="Domain Tool Augmentation"></a>Domain Tool Augmentation</h4><p>One way for domain tool augmentation is to allow LLMs to call domain tools. By endowing LLM with the ability to use tools, it can access larger and more dynamic knowledge bases. LLM generates executable commands for domain tools and processes their outputs. By providing search technology and access to databases, the functionality of LLM can be expanded to cope with larger and more dynamic knowledge spaces. LLMs can also be called by domain tools to serve as smart agents in interactive<br>environments, i.e. LLMs embodied to domain tools.</p>
+<h2 id="Prompt-Crafting"><a href="#Prompt-Crafting" class="headerlink" title="Prompt Crafting"></a>Prompt Crafting</h2><p>Pre-training on prompts can enhance models’ ability to adhere to user intentions and generate accurate and less toxic responses. The use of prompts plays a crucial role in guiding the content generation process of LLMs and setting expectations for desired outputs.</p>
+<h4 id="Discrete-prompts"><a href="#Discrete-prompts" class="headerlink" title="Discrete prompts"></a>Discrete prompts</h4><p>Create task-specific natural language instructions to prompt LLMs and elicit domain-specific knowledge from the parameter space of LLMs</p>
+<h4 id="Continuous-prompts"><a href="#Continuous-prompts" class="headerlink" title="Continuous prompts"></a>Continuous prompts</h4><p>Utilize learnable vectors to guide the model’s content generation.instead of relying on explicit text instructions</p>
+<h2 id="Model-Fine-tuning"><a href="#Model-Fine-tuning" class="headerlink" title="Model Fine-tuning"></a>Model Fine-tuning</h2><p>By fine-tuning a pre-trained model on a domain-specific dataset, the model can learn to leverage the expertise present in the new data, adapting its knowledge to the specific requirements of the targeted domain. </p>
+<h4 id="Adapter-based-Fine-tuning"><a href="#Adapter-based-Fine-tuning" class="headerlink" title="Adapter-based Fine-tuning"></a>Adapter-based Fine-tuning</h4><p>Add task-specific adapters to the pre-trained model’s architecture. These adapters are small, task-specific modules that can be plugged into the model’s layers. During fine-tuning, only the adapter parameters are updated. This allows the model to specialize in the domain-specific task without forgetting its pre-trained knowledge.</p>
+<h4 id="Task-oriented-Fine-tuning"><a href="#Task-oriented-Fine-tuning" class="headerlink" title="Task-oriented Fine-tuning"></a>Task-oriented Fine-tuning</h4><p>During this process, both the base model and task-specific layers are updated to adapt to the nuances of the new task. Modifying the LLM’s inner parameters is beneficial to improve alignment with specific tasks and learn domain kowledge</p>
+<p>This process is particularly useful for tailoring generic language models to perform effectively in specialized and professional domains.</p>
+<p><strong>References</strong><br>Shi, W., Min, S., Yasunaga, M., Seo, M., James, R., Lewis, M., Zettlemoyer, L., &amp; Yih, W. (2023). REPLUG: Retrieval-Augmented Black-Box Language Models. ArXiv, abs&#x2F;2301.12652.</p>
+<p>Wang, Z., Yang, F., Zhao, P., Wang, L., Zhang, J., Garg, M., Lin, Q., &amp; Zhang, D. (2023). Empower Large Language Model to Perform Better on Industrial Domain-Specific Question Answering. ArXiv, abs&#x2F;2305.11541.</p>
+<p>Ling, C., Zhao, X., Lu, J., Deng, C., Zheng, C., Wang, J., Chowdhury, T., Li, Y., Cui, H., Zhang, X., Zhao, T., Panalkar, A., Cheng, W., Wang, H., Liu, Y., Chen, Z., Chen, H., White, C., Gu, Q., Pei, J., Yang, C., &amp; Zhao, L. (2023). Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://shuizhimei.github.io/2023/12/22/Apply-LLMs-in-specific-domains/" data-id="clqkjt0en00008ku55jx9anmw" data-title="Apply LLMs in specific domains" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/22/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2023-12-22T13:44:36.241Z" itemprop="datePublished">2023-12-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/12/22/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://shuizhimei.github.io/2023/12/22/hello-world/" data-id="clqkjt0es00018ku598ut8l03" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/12/22/Apply-LLMs-in-specific-domains/">Apply LLMs in specific domains</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 Gong Qinnruoxuan<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
